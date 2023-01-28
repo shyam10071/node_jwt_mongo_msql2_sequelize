@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "ee2e6c1f-418f-40b5-a522-77eadb4fb6d9",
+		"name": "3_connection_jwt_nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23855128"
+	},
+	"item": [
+		{
+			"name": "sequelize_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"bhavin benzatine\",\r\n    \"email\":\"bhavin@benzatine.com\",\r\n    \"password\":\"12345678\",\r\n    \"phone\":8758590585,\r\n    \"address\":\"Surat,395006, Gujarat, India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sequelize/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sequelize",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sequelize_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shyam@benzatine.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sequelize/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sequelize",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongo_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2QyNTBlZTgyZjBkNWFhMzAzNzNlMjMiLCJpYXQiOjE2NzQ3Mjg2NTR9.vSXYjrClntWXyXRHgtv5wQVTq_KHbe0ZxK2oQJ-W4PY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kung fu pandya\",\r\n    \"title\":\"Hardik pandya\",\r\n    \"description\":\".....-----------..................\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mongo/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mongo",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mysql2_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"shyam benzatine\",\r\n    \"email\":\"a@abenzatine.com\",\r\n    \"password\":\"12345678\",\r\n    \"phone\":8758590585,\r\n    \"address\":\"Surat,395006, Gujarat, India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mysql2/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mysql2",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mysql2_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shyam@benzatine.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mysql2/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mysql2",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mysql2_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc0NzMxNzE2fQ.NBdHrrl5F2foWoh5fkZ69yijty1X6YF3CPDGmKnKoLE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kung fu pandya\",\r\n    \"title\":\"Hardik pandya\",\r\n    \"description\":\".....-----------..................\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mysql2/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mysql2",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongo_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"shyam benzatine\",\r\n    \"email\":\"shyam@benzatine.com\",\r\n    \"password\":\"12345678\",\r\n    \"phone\":8758590585,\r\n    \"address\":\"Surat,395006, Gujarat, India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mongo/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mongo",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongo_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"shyam@benzatine.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mongo/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mongo",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sequelize_post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc0NzM1OTg5fQ.bgc132x-cylrCl5IdnUjv-YwQ8dTsXhAL8V8Fy-HkEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Kung fu pandya\",\r\n    \"title\":\"Hardik pssssssssssssssssssandya\",\r\n    \"description\":\".....-----------..................\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sequelize/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sequelize",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
